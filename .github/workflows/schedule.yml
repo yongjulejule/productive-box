@@ -1,7 +1,8 @@
 name: Update gist
 on:
-  repository_dispatch:
-    types: [build-event]
+  push:
+      branches:
+          - master
   schedule:
     - cron: "0 0 * * *"
 jobs:
